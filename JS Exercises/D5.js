@@ -11,7 +11,7 @@ REGOLE
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
 const pets = ['dog', 'cat', 'hamster', 'redfish']
-for (let i=0; i<3; i++){
+for (let i=0; i<pets.length; i++){
   console.log(pets[i])
 }
 
@@ -19,10 +19,18 @@ for (let i=0; i<3; i++){
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
+const sort = function ()  {
+    return pets.sort()
+}
+console.log(sort())
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
+const reverse = function ()  {
+    return pets.reverse()
+}
+console.log(reverse())
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
@@ -51,11 +59,24 @@ const cars = [
     trims: ['life', 'style', 'r-line'],
   },
 ]
+for (let i=0; i<3; i++){
+    cars[i].licensePlate = 'value'
+
+}
+console.log(cars)
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+const copy=[]
+copy[0] = cars[0]
+cars.push(copy)
+console.log(cars)
+for (let i=0; i<cars.length; i++){
+    cars.pop();   
+}
+console.log(cars)
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
@@ -73,6 +94,7 @@ const justTrims = []
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
+
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
