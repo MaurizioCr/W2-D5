@@ -8,6 +8,10 @@
 header{
     background-color: darkblue;
 }
+body{
+    background: rgb(107,107,107);
+background: linear-gradient(0deg, rgba(107,107,107,1) 0%, rgba(255,255,255,1) 98%);
+}
 .immagine{
     padding-top: 5px;
     width: 15%;
